@@ -11,4 +11,7 @@ public abstract class MyRegister {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	abstract public <T> void registerTo(MySubscriber<T> s);
+	abstract public <T> void use(MyPublisher<T> p);
 }
